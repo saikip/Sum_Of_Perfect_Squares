@@ -1,9 +1,9 @@
 ## **Perfect Square Solution - COP5615: Fall 2018**
 
 ## **Group Info**
-Priyam Saikia (UFID 9414 5292)
+Priyam Saikia (UFID **** ****)
 
-Noopur R Kalawatia (UFID 1980 9834)
+Noopur R Kalawatia (UFID **** ****)
 
 ## **Problem**
 Find all k consecutive sequences in the range 1 to N for which: 
