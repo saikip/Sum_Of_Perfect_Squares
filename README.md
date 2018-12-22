@@ -3,8 +3,6 @@
 ## **Group Info**
 Priyam Saikia (UFID **** ****)
 
-Noopur R Kalawatia (UFID **** ****)
-
 ## **Problem**
 Find all k consecutive sequences in the range 1 to N for which: 
 Sum of squares of k consecutive integers is itself a perfect square.
