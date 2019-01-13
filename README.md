@@ -37,7 +37,6 @@ Sum of squares of k consecutive integers is itself a perfect square.
 ## **Installation and Run:** 
 
 Elixir Mix project has been created to implement the Supervisor Actor model. 
-
 Files of importance in the zipped folder (in order of call):
 
 *Arguments.exs*   -> Commandline entry module
@@ -70,49 +69,51 @@ X workers are spawned with arguments: k and start value of each sequence.
      3. Calculate sum of the squares
      4. Determine of the sum is itself a perfect square.
 
-    For X = 1500, Average CPU/Real Ratio for various N and k is 2.86, which is our best case.
+    **For X = 1500, Average CPU/Real Ratio for various N and k is 2.86, which is our best case.**
 
-2.  The result of running your program for (No valid sequences exists)
+2.  The result of running your program for inputs: N=1000000, K=4 
 
-    $ time mix run arguments.exs 1000000 4
+    (No valid sequences exists)
     
-    **real**    0m22.269s
-    
-    **user**    1m25.022s
-    
-    **sys**     0m0.973s
-    
+        $ time mix run arguments.exs 1000000 4
 
-    **Ratio : 3.86**
+        **real**    0m22.269s
+
+        **user**    1m25.022s
+
+        **sys**     0m0.973s
+
+
+        **Ratio : 3.86**
 
 3.  Ratio of CPU time to REAL TIME: 
 
     Dependencies:
-    
-    N = 1000000
-    
-    k = 24
 
-    Ratio for X 100 = 3.88
-    
-    Ratio for X 1500 = 3.86
-    
-    Ratio for X 10000 = 3.88
+        N = 1000000
 
-    **Sample Chart OF Ratio = CPU time / real time for X = 1500:**
-    
-    |     N      |      k = 24      |       k = 2     |    
-    | ---------- |:----------------:| ---------------:|
-    | 10000000  |      3.740       |      3.925       |
-    | 1000000   |      3.860       |      3.980       |
-    | 100000    |      3.477       |      3.630       |
-    | 10000     |      2.395       |      2.398       |
-    | 1000      |      1.797       |      1.750       |
-    | 100       |      1.723       |      1.719       |
+        k = 24
+
+        Ratio for X 100 = 3.88
+
+        Ratio for X 1500 = 3.86
+
+        Ratio for X 10000 = 3.88
+
+    **Sample Chart of Ratio = CPU time / real time for X = 1500:**
+
+        |     N      |      k = 24      |       k = 2     |    
+        | ---------- |:----------------:| ---------------:|
+        | 10000000  |      3.740       |      3.925       |
+        | 1000000   |      3.860       |      3.980       |
+        | 100000    |      3.477       |      3.630       |
+        | 10000     |      2.395       |      2.398       |
+        | 1000      |      1.797       |      1.750       |
+        | 100       |      1.723       |      1.719       |
 
 4.  The largest problem solved:
 
-    $ mix run arguments.exs 100000000 4
-    
-    Ratio : 3.569
+        $ mix run arguments.exs 100000000 4
+
+        Ratio : 3.569
 
